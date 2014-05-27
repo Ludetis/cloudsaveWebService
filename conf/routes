@@ -1,0 +1,11 @@
+GET        /assets/*file        controllers.Assets.at(path="/public", file)
+
+#POST 	   /cloudsave/save:transferMap		controllers.CloudSaveTask.save(transferMap : Map[String , String])
+
+#GET	   /cloudsave/auth				controllers.CloudAuthentication.auth2Cloud
+
+POST 	   /cloudsave/postBucket		controllers.CloudSaveTask.postMapBucket
+
+GET 	   /cloudsave/getCloudObject	controllers.CloudSaveTask.getCloudObject(id: Option[String])
+
+#GET 	   /cloudsave/getCloudBucketbyId/:id	controllers.CloudSaveTask.getCloudBucketbyId(id: Long)
